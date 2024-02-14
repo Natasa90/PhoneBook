@@ -1,0 +1,42 @@
+body{
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    background-color: #e3e3e3;
+    border: 2px solid  #113f67;
+    border-radius: 5px;
+}
+.header{
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: #a2a8d3;
+    padding: 20px;
+    border-radius: 5px;
+}
+.a, .b, .c, .d{
+    grid-area: 1/1/2/3;
+    border: 2px solid  #113f67;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 2px;
+    position: sticky;
+    top: 0;
+    background-color: #a7bcb9;
+    font-weight: 600;
+    cursor: pointer;
+}
+.name, .number, .person, .phone{
+    padding: 2px;
+    border-bottom: 1px solid #a2a8d3;
+    cursor: pointer;
+}
+.number{
+    text-align: center;
+    padding-right: 5px;
+}
+
