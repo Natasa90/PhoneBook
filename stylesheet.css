@@ -11,6 +11,7 @@ body{
     border: 2px solid  #113f67;
     border-radius: 5px;
 }
+
 .header{
     font-size: 2rem;
     font-weight: 600;
@@ -29,6 +30,11 @@ body{
     background-color: #a7bcb9;
     font-weight: 600;
     cursor: pointer;
+    animation: example 4s infinite;
+}
+@keyframes example{
+    from {background-color: #a7bcb9;}
+    to   {background-color: #436862;}
 }
 .name, .number, .person, .phone{
     padding: 2px;
@@ -38,5 +44,11 @@ body{
 .number{
     text-align: center;
     padding-right: 5px;
+    transition: height 2s;
+}
+.number:hover{
+    height: 100px;
+    line-height:85px;
+    font-size:1.5rem;
 }
 
